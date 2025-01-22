@@ -8,6 +8,12 @@ export default {
     container: {
       center: true,
       padding: '35px',
+      screens: {
+        sm: '100%',
+        md: '768px',
+        lg: '1024px',
+        xl: '1320px',
+      },
       
     },
     extend: {
