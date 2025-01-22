@@ -1,0 +1,13 @@
+{
+  "navItems": [
+    { "id": 1, "label": "home", "href": "#" },
+    { "id": 2, "label": "about us", "href": "#" },
+    { "id": 3, "label": "methods", "href": "#" },
+    { "id": 4, "label": "review", "href": "#" },
+    { "id": 5, "label": "price", "href": "#" },
+    { "id": 6, "label": "gallery", "href": "#" },
+    { "id": 7, "label": "agency", "href": "#" },
+    { "id": 8, "label": "online", "href": "#" },
+    { "id": 9, "label": "contact us", "href": "#" }
+  ]
+}
