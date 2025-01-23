@@ -16,7 +16,11 @@ export default {
       },
       
     },
+    
     extend: {
+      colors: {
+        'dark-pink': '#F70086',
+      },
       screens: {
         'max-xsd': {'max': '480px'}, 
         'max-smd': {'max': '575px'}, 

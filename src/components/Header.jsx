@@ -1,7 +1,7 @@
 import logo from  "../assets/image/logo.png"
 import React, { useEffect, useState } from 'react';
 
-export default function Header(){
+export default function Header(props){
     const [navItems, setNavItems] = useState([]);
 
     useEffect(() => {
@@ -18,7 +18,7 @@ export default function Header(){
             <ul className="flex items-center justify-center">
                 {navItems.map((item ) => (
                     <li className="px-4 " key={item.id}>
-                    <a className="text-white uppercase hover:text-red-950 transition-all text-base"  href={item.href}>{item.label}</a>
+                    <a className="text-white uppercase hover:text-dark-pink font-bold transition-all text-base"  href={item.href}>{item.label}</a>
                     </li>
                 ))}
             <li>

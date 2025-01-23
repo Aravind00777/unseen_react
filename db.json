@@ -9,5 +9,12 @@
     { "id": 7, "label": "agency", "href": "#" },
     { "id": 8, "label": "online", "href": "#" },
     { "id": 9, "label": "contact us", "href": "#" }
-  ]
+  ],
+  "school": {
+    "name": "The UK’s Leading Weekend Drama School",
+    "description": "Highly respected teachers from top UK drama schools work alongside specialised Unseen tutors, providing cutting-edge courses.",
+    "click": ["contact us"]
+  }
 }
+
+ 
