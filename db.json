@@ -13,7 +13,7 @@
   "school": {
     "name": "The UK’s Leading Weekend Drama School",
     "description": "Highly respected teachers from top UK drama schools work alongside specialised Unseen tutors, providing cutting-edge courses.",
-    "click": ["contact us"]
+    "clicks": [{"contact":"i love you pachu", "id":1, "href":"#"}]
   }
 }
 

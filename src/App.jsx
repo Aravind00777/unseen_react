@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import Header from './components/Header'
-import Banner from './components/banner'
+import Header from './components/Header';
+import Banner from './components/Banner';
 
 function App() {
 
