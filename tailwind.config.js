@@ -17,6 +17,7 @@ export default {
       
     },
     
+    
     extend: {
       colors: {
         'dark-pink': '#F70086',
