@@ -11,7 +11,7 @@ export default function Header(props){
           .catch((error) => console.error('Error fetching navitems:', error));
       }, []);
     return  (
-      <div className="sticky top-0 bg-black py-8">
+      <div className="fixed top-0 bg-black py-8 w-full left-0 z-[99]">
        <div className="container">
            <nav className="flex items-center justify-between">
         <a href="#"><img src={logo} alt="" /></a>

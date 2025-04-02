@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import LazyLoadImage from './Lazyload';
+import bannerBg from "../assets/image/banner-bg.png";  
+
 
 export default function Banner() {
     const [bannerItems, setBannerItems] = useState({});
@@ -12,9 +14,10 @@ export default function Banner() {
     }, []);
 
     return (
-        <section className="bg-black py-20">
+        <section className="bg-black py-20 z-[1] relative pt-[108px] min-h-screen flex items-center">
             <div className="container">
-                <div className="max-w-4xl">
+                <>
+                <div className="max-w-3xl ">
                     <h1 className='text-white text-6xl font-bold leading-[1.4]'>
                         {bannerItems.name || 'Loading...'}
                     </h1>
@@ -28,13 +31,14 @@ export default function Banner() {
                         </a>
                     ))}
                 </div>
-                <div className="relative ">
+                <div className="static ">
                 <LazyLoadImage 
-                    src="\image\banner-bg.png" 
+                    src={bannerBg} 
                     alt="Sample Image" 
-                    className="absolute right-0 w-full"
+                    className="absolute right-[8%] w-auto top-[108px] z-[-1]"
       />
                 </div>
+                </>
             </div>
         </section>
     );
