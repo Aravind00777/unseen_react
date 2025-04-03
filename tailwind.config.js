@@ -22,6 +22,10 @@ export default {
       colors: {
         'dark-pink': '#F70086',
       },
+      padding: {
+        'ptA1': '130px',
+        
+      },
       screens: {
         'max-xsd': {'max': '480px'}, 
         'max-smd': {'max': '575px'}, 

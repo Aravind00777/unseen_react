@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import LazyLoadImage from './Lazyload';
 import bannerBg from "../assets/image/banner-bg.png";  
+import img1 from "../assets/image/videoimg1.png";
+import img2 from "../assets/image/videoimg2.png";
+import img3 from "../assets/image/videoimg3.png";
+
+
 
 
 export default function Banner() {
     const [bannerItems, setBannerItems] = useState({});
+    
 
     useEffect(() => {
         fetch('http://localhost:3001/school')
@@ -12,7 +18,20 @@ export default function Banner() {
             .then((data) => setBannerItems(data))
             .catch((error) => console.error('Error fetching banner items:', error));
     }, []);
-
+    const cardblock = {
+        cards: [
+          { cardImage:img1,
+    cardTitle:"Lorem ipsum consectetur adipiscing",
+    cardCnt:"The Unseen provides affordable high-end,weekend actor training"},
+    { cardImage:img2,
+    cardTitle:"Lorem ipsum consectetur adipiscing",
+    cardCnt:"The Unseen provides affordable high-end,weekend actor training"},
+    { cardImage:img3,
+    cardTitle:"Lorem ipsum consectetur adipiscing",
+    cardCnt:"The Unseen provides affordable high-end,weekend actor training"}
+        ]
+      };
+      
     return (
         <section className="bg-black py-20 z-[1] relative pt-[108px] min-h-screen flex items-center">
             <div className="container">
@@ -35,10 +54,26 @@ export default function Banner() {
                 <LazyLoadImage 
                     src={bannerBg} 
                     alt="Sample Image" 
-                    className="absolute right-[8%] w-auto top-[108px] z-[-1]"
-      />
+                    className="absolute right-[8%] w-auto top-[108px] z-[-1]"/>
                 </div>
                 </>
+                <ul className='pt-ptA1 text-white flex items-center'>
+                {cardblock?.cards?.map((item, index) => (
+                       <li key={index}>
+                       <LazyLoadImage
+                       src={item.cardImage}
+                       alt="image"
+                       className='w-[46px]'
+                       />
+                       <span className='block text-2xl text-white py-[24px]'>{item.cardTitle}</span>
+                       <p className='text-lg'>{item.cardCnt}</p>
+                         
+                   </li>
+                    ))}
+                    
+                  
+                   
+                </ul>
             </div>
         </section>
     );
