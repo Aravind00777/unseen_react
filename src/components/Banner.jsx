@@ -4,6 +4,7 @@ import bannerBg from "../assets/image/banner-bg.png";
 import img1 from "../assets/image/videoimg1.png";
 import img2 from "../assets/image/videoimg2.png";
 import img3 from "../assets/image/videoimg3.png";
+import sign from "../assets/image/sign.png";
 
 
 
@@ -33,7 +34,7 @@ export default function Banner() {
       };
       
     return (
-        <section className="bg-black py-20 z-[1] relative pt-[108px] min-h-screen flex items-center">
+        <section className="bg-black py-20 z-[1] relative pt-[230px] min-h-screen flex items-center">
             <div className="container">
                 <>
                 <div className="max-w-3xl ">
@@ -54,12 +55,12 @@ export default function Banner() {
                 <LazyLoadImage 
                     src={bannerBg} 
                     alt="Sample Image" 
-                    className="absolute right-[8%] w-auto top-[108px] z-[-1]"/>
+                    className="absolute right-[8%] w-auto top-[0px] z-[-1]"/>
                 </div>
                 </>
                 <ul className='pt-ptA1 text-white flex items-center'>
                 {cardblock?.cards?.map((item, index) => (
-                       <li key={index}>
+                       <li key={index} className='p-cardpadding border-2 border-dark-pink mx-3 rounded-2xl' >
                        <LazyLoadImage
                        src={item.cardImage}
                        alt="image"
@@ -70,9 +71,13 @@ export default function Banner() {
                          
                    </li>
                     ))}
-                    
-                  
-                   
+                    <li>
+                        <LazyLoadImage
+                        src={sign}
+                        alt="signed cnt"
+                        className=''
+                        />
+                    </li>
                 </ul>
             </div>
         </section>

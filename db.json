@@ -27,6 +27,16 @@
     "cardTitle":"Lorem ipsum consectetur adipiscing",
     "cardCnt":"The Unseen provides affordable high-end,weekend actor training"}]
    
+  },
+
+  "learnmore":{
+      "learnmore_block":[{
+        "subtitle":"Lorem ipsum dolor sit amet",
+    "title":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+    "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum morbi blandit cursus risus at. Enim neque volutpat ac tincidunt vitae.",
+    "btn":"Learn more"
+      }]
+    
   }
 
 }

@@ -24,6 +24,7 @@ export default {
       },
       padding: {
         'ptA1': '130px',
+        'cardpadding':'42px 14px 65px 14px',
         
       },
       screens: {
