@@ -22,6 +22,9 @@ export default {
       colors: {
         'dark-pink': '#F70086',
       },
+      fontSize:{
+        '45px':'45px'
+      },
       padding: {
         'ptA1': '130px',
         'cardpadding':'42px 14px 65px 14px',
