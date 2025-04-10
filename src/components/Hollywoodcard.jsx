@@ -15,14 +15,14 @@ export default function Hollywoodcard(){
         image:masterclass
       },
       {
-        title:"Hollywood A-list masterclasses",
+        title:"Exceptional acting showcases",
         content:"We are supported by some of the hottest movie stars in the world. Our free to student masterclasses have included Academy Award winner Daniel Kaluuya, Ben Barnes, Natalie Dormer, Ed Skrein, Robert Sheehan,  Sofia Boutella, directors Antony Byrne, Wayne Yip and many others.",
         profileimage:img2,
         image:masterclass
       },
       {
 
-        title:"Hollywood A-list masterclasses",
+        title:"Unseen Productions",
         content:"We are supported by some of the hottest movie stars in the world. Our free to student masterclasses have included Academy Award winner Daniel Kaluuya, Ben Barnes, Natalie Dormer, Ed Skrein, Robert Sheehan,  Sofia Boutella, directors Antony Byrne, Wayne Yip and many others.",
         profileimage:img3,
         image:masterclass
@@ -30,16 +30,16 @@ export default function Hollywoodcard(){
     return <>
     {hollywood_block?.map((item , index )=>(
         <div key={index}  className={`mt-12 flex item-center ${index === 1 ?"flex-row-reverse":""}`}>
-        <div className=''>
-            <figure><img src={item.profileimage} alt="" /></figure>
+        <div className='basis-[40%] max-w-[40%]'>
+            <img className='w-full h-full object-contain object-top' src={item.profileimage} alt="" />
         </div>
-        <div>
-            <div>
-            <img src={item.image} alt="" />
-            <span>{item.title}</span>
+        <div className='basis-[60%] max-w-[60%]'>
+            <div className='relative'>
+            <img className='w-full h-[305px] object-cover ' src={item.image} alt="" />
+            <span className='inline-block absolute bottom-0 py-5 px-8 text-4xl text-white bg-black'>{item.title}</span>
             </div>
             <div>
-                <p>{item.content}</p>
+                <p className='text-lg p-8'>{item.content}</p>
             </div>
         </div>
 </div>
