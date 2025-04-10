@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import LazyLoadImage from './Lazyload';
+import Hollywoodcard from './Hollywoodcard';
+
 
 export default function Learnmore(){
     const [learnmore,setLearnmore] = useState({});
@@ -14,15 +15,17 @@ export default function Learnmore(){
             {learnmore?.learnmore_block?.map((item ,index) => (
                     <div className='flex item-center justify-center'>
                     <div className='max-w-[50%] basis-1/2 '>
-                            <span>{item.subtitle}</span>
+                            <span className='block text-2xl font-bold'>{item.subtitle}</span>
                             <h2 className='text-45px font-bold'>{item.title}</h2>
                     </div>
                     <div className='max-w-[50%] basis-1/2 '>
                             <hr className='border-1 border-black pb-4'/>
-                            <p>{item.content}</p> 
+                            <p className='text-lg'>{item.content}</p> 
+                            <a href="" className='text-lg border border-dark-pink rounded-full mt-8 max-w-[248px] font-semibold py-3 px-4 block text-center'>{item.btn}</a>
                     </div>
                 </div>
             ))}
+            <Hollywoodcard/>
                 
         </div>
     </section>
