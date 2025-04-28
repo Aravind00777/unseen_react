@@ -28,6 +28,11 @@
         "btn":"Learn more"
       }]
     
+  },
+  "knowmore":{
+    "knowmore_title":"Lorem ipsum dolor sit amet consectetur",
+    "knowmore_cnt":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi tempus imperdiet nulla malesuada pellentesque. Varius sit amet mattis vulputate enim nulla aliquet porttitor.",
+    "knowmore_btn":"know more"
   }
 
 }

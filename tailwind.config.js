@@ -30,6 +30,9 @@ export default {
         'cardpadding':'42px 14px 65px 14px',
         
       },
+      maxWidth:{
+          'max282':'282px'
+      },
       screens: {
         'max-xsd': {'max': '480px'}, 
         'max-smd': {'max': '575px'}, 
