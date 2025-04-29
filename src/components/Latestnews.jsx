@@ -34,7 +34,7 @@ export default function Latestnews(){
                     className="object-contain w-full "
                     />
                     <span className='block pt-6 pb-10 text-2xl font-bold'>{item.titles}</span>
-                    <a href="" className='text-lg '>{item.readmore}</a>
+                    <a href="" className='text-lg capitalize'>{item.readmore}</a>
                 </li>
                 ))}
                 
