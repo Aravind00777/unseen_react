@@ -22,11 +22,12 @@ export default function Latestnews(){
                 titles:"Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor.",
                 readmore:"read more"
             }
-        ]
+        ],
+        newstitle:"Latest news"
     }
     return <section className="pt-20 pb-6">
-        <div className="container pb-20">
-            <ul className='flex items-center'>
+        <div className="container ">
+            <ul className='flex items-center pb-20'>
                 {latestnews?.news?.map((item , index) => (
                     <li key={index} className='flex-1 p-6 bg-lightgrey rounded-[20px] mx-3'>
                     <LazyLoadImage 
@@ -39,6 +40,7 @@ export default function Latestnews(){
                 ))}
                 
             </ul>
+            <h3 className='text-45px font-bold'>{latestnews.newstitle}</h3>
         </div>
     </section>
 }

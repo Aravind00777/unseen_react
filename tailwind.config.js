@@ -21,7 +21,8 @@ export default {
     extend: {
       colors: {
         'dark-pink': '#F70086',
-        'lightgrey':'#E4E4E4'
+        'lightgrey':'#E4E4E4',
+        'darkgrey':'#16151A',
       },
       fontSize:{
         '45px':'45px'

@@ -6,6 +6,9 @@ import Knowmore from './components/Knowmore';
 import Action_card from './components/Action_card';
 import Videosec from './components/Videosec';
 import Latestnews from './components/Latestnews';
+import Readmore from './components/Readmore';
+import Logosec from './components/Logosec';
+import Footer from './components/Footer';
 function App() {
 
   return (
@@ -17,6 +20,9 @@ function App() {
       <Action_card/>
       <Videosec/>
       <Latestnews/>
+      <Readmore/>
+      <Logosec/>
+      <Footer/>
     </>
     
      

@@ -13,7 +13,7 @@ export default function Learnmore(){
     return <section className='py-20'>
         <div className="container">
             {learnmore?.learnmore_block?.map((item ,index) => (
-                    <div className='flex item-center justify-center'>
+                    <div key={index} className='flex item-center justify-center'>
                     <div className='max-w-[50%] basis-1/2 '>
                             <span className='block text-2xl font-bold'>{item.subtitle}</span>
                             <h2 className='text-45px font-bold'>{item.title}</h2>

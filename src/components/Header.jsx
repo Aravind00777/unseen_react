@@ -1,4 +1,4 @@
-import logo from  "../assets/image/logo.png"
+import logo from  "../assets/image/logo.png";
 import React, { useEffect, useState } from 'react';
 
 export default function Header(props){
