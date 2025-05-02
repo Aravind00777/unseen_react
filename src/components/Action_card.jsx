@@ -25,8 +25,8 @@ export default function Action_card(){
         }     
         ]
     }
-    return <section className='py-20'>
-        <div className="container">
+    return <section className='py-20 '>
+        <div className="container max-xxl:max-w-full">
             <ul className='flex items-center '>
                 {actioncard?.cards?.map((item ,index)=>(
                     <li key={index} className=' flex-1 px-3'>

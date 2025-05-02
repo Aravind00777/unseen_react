@@ -12,12 +12,12 @@ export default function Header(props){
       }, []);
     return  (
       <div className="fixed top-0 bg-black py-8 w-full left-0 z-[99]">
-       <div className="container">
+       <div className="container max-xxl:max-w-full">
            <nav className="flex items-center justify-between">
         <a href="#"><img src={logo} alt="" /></a>
             <ul className="flex items-center justify-center">
                 {navItems.map((item ) => (
-                    <li className="px-4 " key={item.id}>
+                    <li className="px-4 max-xxl:px-2" key={item.id}>
                     <a className="text-white uppercase hover:text-dark-pink font-bold transition-all text-base"  href={item.href}>{item.label}</a>
                     </li>
                 ))}

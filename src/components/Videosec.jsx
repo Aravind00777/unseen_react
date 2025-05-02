@@ -12,8 +12,8 @@ export default function Videosec (){
             playbtn:playbtn
     }
     return <section className="py-20 bg-lightgrey">
-        <div className="container">
-                <h2 className='font-bold text-45px '>{videoSec.videotitle}</h2>
+        <div className="container max-xxl:max-w-full">
+                <h2 className='font-bold text-45px max-xxl:text-[40px]'>{videoSec.videotitle}</h2>
                 <div className='relative z-[2] mt-10'>
                     <video className='w-full h-full' src={videoSec.videolink}></video>
                     <LazyLoadImage 

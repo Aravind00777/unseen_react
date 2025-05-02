@@ -35,10 +35,10 @@ export default function Banner() {
       
     return (
         <section className="bg-black py-20 z-[1] relative pt-[230px] min-h-screen flex items-center">
-            <div className="container">
+            <div className="container max-xxl:max-w-full">
                 <>
                 <div className="max-w-3xl ">
-                    <h1 className='text-white text-6xl font-bold leading-[1.4]'>
+                    <h1 className='text-white text-6xl max-xxl:text-[55px] font-bold leading-[1.4]'>
                         {bannerItems.name || 'Loading...'}
                     </h1>
                     <p className='text-white text-xl pt-10 font-normal'>

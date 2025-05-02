@@ -27,7 +27,7 @@ export default function Footer(){
 
     },[]);
     return <footer className='pt-20 pb-10 bg-black text-white border-t-[7px] border-dark-pink'>
-        <div className="container">
+        <div className="container max-xxl:max-w-full">
             <a href=""><img className='object-contain w-auto h-auto' src={logo} alt="" /></a>
             <ul className='flex pb-24 pt-16'>
                 {footerdata?.footertitles?.map((item , outterIndex)=>(
