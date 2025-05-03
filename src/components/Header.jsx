@@ -15,7 +15,8 @@ export default function Header(props){
        <div className="container ">
            <nav className="flex items-center justify-between">
         <a href="#" className="w-auto"><img className="object-contain w-full " src={logo} alt="" /></a>
-            <ul className="flex items-center justify-center">
+            
+            <ul className="flex items-center justify-center max-xl:hidden max-xl:flex-col">
                 {navItems.map((item ) => (
                     <li className="px-4 max-3xl:px-2" key={item.id}>
                     <a className="text-white uppercase hover:text-dark-pink font-bold transition-all text-base max-2xl:text-sm"  href={item.href}>{item.label}</a>

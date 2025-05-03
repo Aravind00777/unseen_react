@@ -36,7 +36,7 @@ export default function Readmore(){
                 alt="backgrond"
                 />
                 
-                <h2 className='text-45px max-3xl:text-[40px] text-white font-bold left-8 absolute z-[2] bottom-8'>
+                <h2 className='text-45px max-3xl:text-[40px] max-2xl:text-4xl text-white font-bold left-8 absolute z-[2] bottom-8'>
                     <span className='block'>{data.title1}</span>
                     <span className='block'>{data.title2}</span>
                     <span className='block'>{data.title3}</span>
@@ -46,8 +46,8 @@ export default function Readmore(){
             <ul className="flex pt-10">
                     {data?.readmoredata?.map((item , index) => (
                         <li className="flex-1 mx-3 bg-darkgrey rounded-xl p-6 text-white" key={index}>
-                        <span className='block text-45px max-3xl:text-[40px] border max-w-16 font-bold text-center rounded-xl'>{item.number}</span>
-                        <h4 className='py-8 text-2xl font-bold'>{item.title}</h4>
+                        <span className='block text-45px max-3xl:text-[40px] max-2xl:text-4xl border max-w-16 font-bold text-center rounded-xl'>{item.number}</span>
+                        <h4 className='py-8 text-2xl max-2xl:text-xl font-bold'>{item.title}</h4>
                         <a href="" className='duration-300 ease-in-out hover:bg-dark-pink inline-block uppercase text-base px-10 py-3 border border-dark-pink rounded-full '>{item.readmore}</a>
                     </li>
                     ))}

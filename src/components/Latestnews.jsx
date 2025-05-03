@@ -34,13 +34,13 @@ export default function Latestnews(){
                     src={item.image}
                     className="object-contain w-full "
                     />
-                    <span className='block pt-6 pb-10 text-2xl max-3xl:text-[22px] font-bold'>{item.titles}</span>
+                    <span className='block pt-6 pb-10 text-2xl max-3xl:text-[22px] max-2xl:text-xl font-bold'>{item.titles}</span>
                     <a href="" className='text-lg capitalize hover:text-dark-pink duration-300 ease-in-out'>{item.readmore}</a>
                 </li>
                 ))}
                 
             </ul>
-            <h3 className='text-45px max-3xl:text-[40px] font-bold'>{latestnews.newstitle}</h3>
+            <h3 className='text-45px max-3xl:text-[40px] max-2xl:text-4xl font-bold'>{latestnews.newstitle}</h3>
         </div>
     </section>
 }

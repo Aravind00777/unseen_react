@@ -26,40 +26,40 @@ export default function Footer(){
         .catch((error) => console.error('Error fetching footer data', error));
 
     },[]);
-    return <footer className='pt-20 pb-10 bg-black text-white border-t-[7px] border-dark-pink'>
+    return <footer className='pt-20 pb-10 max-2xl:pt-14  bg-black text-white border-t-[7px] border-dark-pink'>
         <div className="container ">
             <a href=""><img className='object-contain w-auto h-auto' src={logo} alt="" /></a>
-            <ul className='flex pb-24 pt-16'>
+            <ul className='flex pb-24 pt-16 max-2xl:pb-16 max-2xl:pt-10 gap-2'>
                 {footerdata?.footertitles?.map((item , outterIndex)=>(
                       <li key={outterIndex} className='flex-1'>
                       <span className='block pb-6 uppercase text-lg font-bold'>{item.title}</span>
                       <ul>
                         {item.links?.map((item , innerIndex) => (                      
                             <li  key={innerIndex} className={`pb-6 `} >
-                                <a  className={`text-lg inline-block duration-300 ease-in-out hover:text-dark-pink ${outterIndex === 3?"uppercase":"" }`} href={item.href}>{item.link}</a>
+                                <a  className={`text-lg max-2xl:text-sm inline-block duration-300 ease-in-out hover:text-dark-pink ${outterIndex === 3?"uppercase":"" }`} href={item.href}>{item.link}</a>
                             </li>
                         ))}
                           
                       </ul>
                   </li>
                 ))}
-              <li className='flex-initial w-80'>
+              <li className='flex-initial w-80 max-2xl:w-56'>
                 <span className='block pb-6 uppercase text-lg font-bold'>{footerdata.title}</span>
                 <form className='flex '>
-                <input type="text" placeholder='Enter your email'  className='text-lg border border-dark-pink flex-1 px-4 py-[5px] bg-transparent outline-none'/>
+                <input type="text" placeholder='Enter your email'  className='text-lg border border-dark-pink flex-1 max-2xl:w-[80%] px-4 py-[5px] bg-transparent outline-none'/>
                 <a href="" className='flex-initial justify-center flex items-center w-12 bg-dark-pink text-white border-dark-pink duration-300 ease-in-out text-lg text-center capitalize items-center hover:bg-transparent border hover:border-dark-pink'>{footerdata.btngo}</a>
                 </form>
                
               </li>
             </ul>
-            <div className='flex border-b border-dark-pink pb-8 mb-8'>
+            <div className='flex border-b border-dark-pink pb-8 mb-8 max-2xl:pb-6 max-2xl:mb-6'>
               <div className='flex-1'>
                 <p className='text-sm'> {Footerblk.title}</p>
               </div>
-              <div className='flex-initial w-80'>
+              <div className='flex-initial w-80 '>
                 <ul className='flex justify-end'>
                   {Footerblk?.logos?.map((item , index) =>(
-                     <li className=' ms-4 flex-initial w-[48px] h-[48px] flex items-center justify-center border border-dark-pink duration-300 ease-in-out hover:bg-dark-pink rounded-xl'><a className='block w-full h-full flex items-center justify-center' href={item.href} ><img className='object-contain w-auto h-auto' src={item.logo} alt="" /></a></li>
+                     <li key={index} className=' ms-4 flex-initial w-[48px] h-[48px] flex items-center justify-center border border-dark-pink duration-300 ease-in-out hover:bg-dark-pink rounded-xl'><a className='block w-full h-full flex items-center justify-center' href={item.href} ><img className='object-contain w-auto h-auto' src={item.logo} alt="" /></a></li>
                   ))}
                  
                 </ul>

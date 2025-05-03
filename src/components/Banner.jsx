@@ -47,7 +47,7 @@ export default function Banner() {
                     </p>
 
                     {bannerItems.clicks?.map((item, index) => (
-                        <a key={index} href={item.href} className='text-white border-[2px] border-transparent hover:border-dark-pink hover:bg-transparent duration-300 ease-in-out px-8 py-4 bg-dark-pink rounded-full text-center block mt-8 text-2xl px-2 max-w-[346px]'>
+                        <a key={index} href={item.href} className='text-white border-[2px] border-transparent hover:border-dark-pink hover:bg-transparent duration-300 ease-in-out px-8 py-4 bg-dark-pink rounded-full text-center block mt-8 text-2xl max-2xl:text-xl px-2 max-w-[346px]'>
                             {item.contact}
                         </a>
                     ))}
@@ -56,19 +56,19 @@ export default function Banner() {
                 <LazyLoadImage 
                     src={bannerBg} 
                     alt="Sample Image" 
-                    className="absolute right-[8%] w-auto top-[0px] z-[-1]"/>
+                    className="absolute right-[8%] w-auto top-[0px] z-[-1] max-2xl:right-0 max-2xl:w-2/3"/>
                 </div>
                 </>
-                <ul className='pt-ptA1 text-white flex items-center'>
+                <ul className='pt-ptA1 max-2xl:pt-20 text-white flex items-center'>
                 {cardblock?.cards?.map((item, index) => (
-                       <li key={index} className='p-cardpadding border-2 border-dark-pink mx-3 rounded-2xl' >
+                       <li key={index} className='p-cardpadding max-2xl:py-10 border-2 border-dark-pink mx-3 rounded-2xl' >
                        <LazyLoadImage
                        src={item.cardImage}
                        alt="image"
                        className='w-[46px]'
                        />
-                       <span className='block text-2xl text-white py-[24px]'>{item.cardTitle}</span>
-                       <p className='text-lg'>{item.cardCnt}</p>
+                       <span className='block text-2xl max-2xl:text-xl text-white py-[24px]'>{item.cardTitle}</span>
+                       <p className='text-lg max-2xl:text-base'>{item.cardCnt}</p>
                          
                    </li>
                     ))}

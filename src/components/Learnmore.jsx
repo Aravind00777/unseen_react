@@ -15,8 +15,8 @@ export default function Learnmore(){
             {learnmore?.learnmore_block?.map((item ,index) => (
                     <div key={index} className='flex  gap-3 item-center justify-center'>
                     <div className='max-w-[50%] basis-1/2 '>
-                            <span className='block text-2xl font-bold'>{item.subtitle}</span>
-                            <h2 className='text-45px max-3xl:text-[40px] font-bold'>{item.title}</h2>
+                            <span className='block text-2xl max-2xl:text-xl font-bold'>{item.subtitle}</span>
+                            <h2 className='text-45px max-3xl:text-[40px] max-2xl:text-4xl max-2xl:text-4xl font-bold'>{item.title}</h2>
                     </div>
                     <div className='max-w-[50%] basis-1/2 '>
                             <hr className='border-1 border-black pb-4'/>

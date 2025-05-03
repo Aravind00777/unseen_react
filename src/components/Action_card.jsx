@@ -25,17 +25,17 @@ export default function Action_card(){
         }     
         ]
     }
-    return <section className='py-20 '>
+    return <section className='py-20 max-2xl:py-16'>
         <div className="container ">
             <ul className='flex items-center '>
                 {actioncard?.cards?.map((item ,index)=>(
                     <li key={index} className=' flex-1 px-3'>
                     <div className='relative z-[1]'>
                         <img className='object-contain w-full h-full' src={item.cardimage} alt="" />
-                        <span className='block bg-[rgba(0,0,0,.7)] absolute bottom-0 left-0 right-0 w-full p-5 text-2xl max-3xl:text-[22px] font-bold text-white '>{item.cardtitle}</span>
+                        <span className='block bg-[rgba(0,0,0,.7)] absolute bottom-0 left-0 right-0 w-full p-5 text-2xl max-3xl:text-[22px] max-2xl:text-xl font-bold text-white '>{item.cardtitle}</span>
                     </div>
                     <div className='pt-5 pl-5 pr-4 pb-12 bg-lightgrey '>
-                            <p className='text-lg '>{item.cardcnt}</p>
+                            <p className='text-lg max-2xl:text-base'>{item.cardcnt}</p>
                         </div>
 
                 </li>
