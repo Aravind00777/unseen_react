@@ -11,12 +11,12 @@ export default function Learnmore(){
                 .catch((error) => console.error('Error fetching learnmore items:', error));
         }, []);
     return <section className='py-20'>
-        <div className="container max-xxl:max-w-full">
+        <div className="container ">
             {learnmore?.learnmore_block?.map((item ,index) => (
                     <div key={index} className='flex  gap-3 item-center justify-center'>
                     <div className='max-w-[50%] basis-1/2 '>
                             <span className='block text-2xl font-bold'>{item.subtitle}</span>
-                            <h2 className='text-45px max-xxl:text-[40px] font-bold'>{item.title}</h2>
+                            <h2 className='text-45px max-3xl:text-[40px] font-bold'>{item.title}</h2>
                     </div>
                     <div className='max-w-[50%] basis-1/2 '>
                             <hr className='border-1 border-black pb-4'/>

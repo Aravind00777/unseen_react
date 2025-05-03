@@ -33,13 +33,13 @@ export default function Hollywoodcard(){
         <div className='basis-[40%] max-w-[40%]'>
             <img className='w-full h-full object-contain object-top' src={item.profileimage} alt="" />
         </div>
-        <div className='basis-[60%] max-w-[60%]'>
+        <div className='basis-[60%] max-w-[60%] flex flex-col'>
             <div className='relative'>
-            <img className='w-full h-[305px] object-cover ' src={item.image} alt="" />
-            <span className={`inline-block font-bold absolute bottom-0 py-5 px-8 text-4xl max-xxl:text-3xl text-white bg-black w-[85%] rounded-tr-[80px]  ${index === 1 ?"right-0 rounded-tr-none rounded-ss-[80px] text-right":""}`}>{item.title}</span>
+            <img className='w-full h-[305px] max-3xl:h-auto object-cover ' src={item.image} alt="" />
+            <span className={`inline-block font-bold absolute bottom-0 py-5 px-8 text-4xl  max-3xl:text-3xl text-white bg-black w-[85%] rounded-tr-[80px]  ${index === 1 ?"right-0 rounded-tr-none rounded-ss-[80px] text-right":""}`}>{item.title}</span>
             </div>
-            <div>
-                <p className='text-lg p-8'>{item.content}</p>
+            <div className='max-3xl:grow p-8'>
+                <p className='text-lg '>{item.content}</p>
             </div>
         </div>
 </div>

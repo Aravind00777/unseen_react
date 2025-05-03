@@ -26,21 +26,21 @@ export default function Latestnews(){
         newstitle:"Latest news"
     }
     return <section className="pt-20 pb-6">
-        <div className="container max-xxl:max-w-full">
-            <ul className='flex items-center pb-20'>
+        <div className="container ">
+            <ul className='flex items-center pb-20 max-3xl:pb-16'>
                 {latestnews?.news?.map((item , index) => (
                     <li key={index} className='flex-1 p-6 bg-lightgrey rounded-[20px] mx-3'>
                     <LazyLoadImage 
                     src={item.image}
                     className="object-contain w-full "
                     />
-                    <span className='block pt-6 pb-10 text-2xl font-bold'>{item.titles}</span>
+                    <span className='block pt-6 pb-10 text-2xl max-3xl:text-[22px] font-bold'>{item.titles}</span>
                     <a href="" className='text-lg capitalize hover:text-dark-pink duration-300 ease-in-out'>{item.readmore}</a>
                 </li>
                 ))}
                 
             </ul>
-            <h3 className='text-45px max-xxl:text-[40px] font-bold'>{latestnews.newstitle}</h3>
+            <h3 className='text-45px max-3xl:text-[40px] font-bold'>{latestnews.newstitle}</h3>
         </div>
     </section>
 }
