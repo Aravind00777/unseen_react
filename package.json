@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Aravind00777.github.io/unseen_react",
   "name": "unseen_react",
   "private": true,
   "version": "0.0.0",
@@ -7,6 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
     "preview": "vite preview",
     "server": "json-server db.json --port 3001"
   },
