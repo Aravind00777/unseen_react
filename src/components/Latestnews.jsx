@@ -25,22 +25,22 @@ export default function Latestnews(){
         ],
         newstitle:"Latest news"
     }
-    return <section className="pt-20 pb-6">
+    return <section className="pt-20 pb-6 max-xl:pt-14">
         <div className="container ">
-            <ul className='flex items-center pb-20 max-3xl:pb-16'>
+            <ul className='flex items-center pb-20 max-3xl:pb-16 max-xl:pb-10 max-lg:flex-wrap max-lg:gap-4 justify-center' >
                 {latestnews?.news?.map((item , index) => (
-                    <li key={index} className='flex-1 p-6 bg-lightgrey rounded-[20px] mx-3'>
+                    <li key={index} className='flex-1 p-6 max-xl:p-3 bg-lightgrey rounded-[20px] mx-3 max-lg:mx-0  max-lg:basis-[45%] max-lg:max-w-[45%] '>
                     <LazyLoadImage 
                     src={item.image}
                     className="object-contain w-full "
                     />
-                    <span className='block pt-6 pb-10 text-2xl max-3xl:text-[22px] max-2xl:text-xl font-bold'>{item.titles}</span>
+                    <span className='block pt-6 pb-10 text-2xl max-3xl:text-[22px] max-2xl:text-xl max-xl:text-lg font-bold'>{item.titles}</span>
                     <a href="" className='text-lg capitalize hover:text-dark-pink duration-300 ease-in-out'>{item.readmore}</a>
                 </li>
                 ))}
                 
             </ul>
-            <h3 className='text-45px max-3xl:text-[40px] max-2xl:text-4xl font-bold'>{latestnews.newstitle}</h3>
+            <h3 className='text-45px max-3xl:text-[40px] max-2xl:text-4xl max-xl:text-3xl font-bold'>{latestnews.newstitle}</h3>
         </div>
     </section>
-}
+}                                                               

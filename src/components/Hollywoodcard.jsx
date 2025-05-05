@@ -30,16 +30,16 @@ export default function Hollywoodcard(){
     return <>
     {hollywood_block?.map((item , index )=>(
         <div key={index}  className={`mt-12 flex item-center ${index === 1 ?"flex-row-reverse":""}`}>
-        <div className='basis-[40%] max-w-[40%]'>
+        <div className='basis-[40%] max-w-[40%] max-xl:max-w-[30%] max-xl:basis-[30%]'>
             <img className='w-full h-full object-contain object-top' src={item.profileimage} alt="" />
         </div>
-        <div className='basis-[60%] max-w-[60%] flex flex-col'>
+        <div className='basis-[60%] max-w-[60%] max-xl:max-w-[70%] max-xl:basis-[70%] flex flex-col'>
             <div className='relative'>
-            <img className='w-full h-[305px] max-3xl:h-auto object-cover ' src={item.image} alt="" />
-            <span className={`inline-block font-bold absolute bottom-0 py-5 px-8 text-4xl  max-3xl:text-3xl max-2xl:text-2xl text-white bg-black w-[85%] rounded-tr-[80px]  ${index === 1 ?"right-0 rounded-tr-none rounded-ss-[80px] text-right":""}`}>{item.title}</span>
+            <img className='w-full h-[305px] max-3xl:h-auto object-cover max-xl:h-[100px]' src={item.image} alt="" />
+            <span className={`inline-block font-bold absolute bottom-0 py-5 max-2xl:py-3 px-8 max-2xl:px-4 max-xl:px-2 max-xl:text-base text-4xl  max-3xl:text-3xl max-2xl:text-2xl max-xl:text-lg text-white bg-black w-[85%] rounded-tr-[80px]  ${index === 1 ?"right-0 rounded-tr-none rounded-ss-[80px] text-right":""}`}>{item.title}</span>
             </div>
-            <div className='grow p-8 max-2xl:p-4'>
-                <p className='text-lg max-2xl:text-base'>{item.content}</p>
+            <div className='grow p-8 max-2xl:p-4 max-xl:px-2'>
+                <p className='text-lg max-2xl:text-base max-xl:text-sm'>{item.content}</p>
             </div>
         </div>
 </div>

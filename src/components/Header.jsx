@@ -23,7 +23,6 @@ export default function Header(props){
                     </li>
                 ))}
             <li>
-
             </li>
             </ul>
             </nav>

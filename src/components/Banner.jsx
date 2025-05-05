@@ -35,14 +35,14 @@ export default function Banner() {
       
     return (
        <>
-        <section className="bg-black py-20 z-[1] relative pt-[230px] max-2xl:pt-[175px] min-h-screen flex items-center">
+        <section className="bg-black py-20 z-[1] relative pt-[230px] max-2xl:pt-[175px] max-xl:pt-[150px] min-h-screen flex items-center">
             <div className="container ">
                 <>
                 <div className="max-w-3xl ">
-                    <h1 className='text-white text-6xl max-3xl:text-[55px] max-2xl:text-5xl font-bold leading-[1.4]'>
+                    <h1 className='text-white text-6xl max-3xl:text-[55px] max-2xl:text-5xl max-xl:text-4xl font-bold leading-[1.4]'>
                         {bannerItems.name || 'Loading...'}
                     </h1>
-                    <p className='text-white text-xl pt-10 font-normal'>
+                    <p className='text-white text-xl max-xl:text-lg pt-10 font-normal'>
                         {bannerItems.description || ''}
                     </p>
 
@@ -56,12 +56,12 @@ export default function Banner() {
                 <LazyLoadImage 
                     src={bannerBg} 
                     alt="Sample Image" 
-                    className="absolute right-[8%] w-auto top-[0px] z-[-1] max-2xl:right-0 max-2xl:w-2/3"/>
+                    className="absolute right-[8%] w-auto top-[0px] z-[-1] max-2xl:right-0 max-2xl:w-2/3 max-xl:w-[90%]"/>
                 </div>
                 </>
-                <ul className='pt-ptA1 max-2xl:pt-20 text-white flex items-center'>
+                <ul className='pt-ptA1 max-2xl:pt-20 text-white flex items-center max-xl:flex-wrap max-xl:gap-4 justify-center'>
                 {cardblock?.cards?.map((item, index) => (
-                       <li key={index} className='p-cardpadding max-2xl:py-10 border-2 border-dark-pink mx-3 rounded-2xl' >
+                       <li key={index} className='p-cardpadding max-2xl:py-10 border-2 border-dark-pink mx-3 rounded-2xl max-xl:basis-[45%] max-xl:even:mr-0' >
                        <LazyLoadImage
                        src={item.cardImage}
                        alt="image"
@@ -72,7 +72,7 @@ export default function Banner() {
                          
                    </li>
                     ))}
-                    <li>
+                    <li className='max-xl:basis-[45%]'>
                         <LazyLoadImage
                         src={sign}
                         alt="signed cnt"

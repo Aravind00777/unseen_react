@@ -43,12 +43,12 @@ export default function Readmore(){
                 </h2>
            
             </div>
-            <ul className="flex pt-10">
+            <ul className="flex pt-10 max-lg:flex-wrap max-lg:gap-4">
                     {data?.readmoredata?.map((item , index) => (
-                        <li className="flex-1 mx-3 bg-darkgrey rounded-xl p-6 text-white" key={index}>
-                        <span className='block text-45px max-3xl:text-[40px] max-2xl:text-4xl border max-w-16 font-bold text-center rounded-xl'>{item.number}</span>
-                        <h4 className='py-8 text-2xl max-2xl:text-xl font-bold'>{item.title}</h4>
-                        <a href="" className='duration-300 ease-in-out hover:bg-dark-pink inline-block uppercase text-base px-10 py-3 border border-dark-pink rounded-full '>{item.readmore}</a>
+                        <li className="flex-1 mx-3 bg-darkgrey rounded-xl p-6 text-white max-lg:mx-0" key={index}>
+                        <span className='block text-45px max-3xl:text-[40px] max-2xl:text-4xl max-xl:text-3xl border max-w-16 font-bold text-center rounded-xl'>{item.number}</span>
+                        <h4 className='py-8 max-xl:py-4 text-2xl max-2xl:text-xl max-xl:text-lg font-bold'>{item.title}</h4>
+                        <a href="" className='duration-300 ease-in-out hover:bg-dark-pink inline-block uppercase text-base px-10 py-3 border border-dark-pink rounded-full  max-xl:py-3 max-xl:text-sm'>{item.readmore}</a>
                     </li>
                     ))}
                     
