@@ -29,8 +29,8 @@ export default function Logosec (){
     }
     return <section className="pt-12 pb-20 max-2xl:pb-14 max-2xl:pt-10">
         <div className="container ">
-            <h2 className="text-45px max-3xl:text-[40px] max-2xl:text-4xl max-xl:text-3xl font-bold">{datasec.title}</h2>
-            <ul className=" py-16 max-2xl:py-10 flex-wrap grid grid-flow-col grid-rows-2  items-center gap-8">
+            <h2 className="text-45px max-3xl:text-[40px] max-2xl:text-4xl max-xl:text-3xl max-lg:text-2xl font-bold">{datasec.title}</h2>
+            <ul className=" py-16 max-2xl:py-10 flex-wrap grid grid-flow-col grid-rows-2  items-center gap-8  max-md:grid-rows-4 ">
                 {datasec.grid.map((item , index) => (
                     <li key={index}><img className="w-full object-contain h-full" src={item.image} alt="" /></li>
                 ))}

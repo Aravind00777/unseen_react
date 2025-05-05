@@ -29,13 +29,13 @@ export default function Footer(){
     return <footer className='pt-20 pb-10 max-2xl:pt-14  bg-black text-white border-t-[7px] border-dark-pink'>
         <div className="container ">
             <a href=""><img className='object-contain w-auto h-auto' src={logo} alt="" /></a>
-            <ul className='flex pb-24 pt-16 max-2xl:pb-16 max-2xl:pt-10 gap-2'>
+            <ul className='flex pb-24 pt-16 max-2xl:pb-16 max-2xl:pt-10 gap-2 max-lg:flex-wrap'>
                 {footerdata?.footertitles?.map((item , outterIndex)=>(
-                      <li key={outterIndex} className='flex-1'>
+                      <li key={outterIndex} className='flex-1 max-lg:flex-none max-lg:max-w-full max-lg:basis-[45%] max-sm:basis-full'>
                       <span className='block pb-6 uppercase text-lg font-bold'>{item.title}</span>
                       <ul>
                         {item.links?.map((item , innerIndex) => (                      
-                            <li  key={innerIndex} className={`pb-6 `} >
+                            <li  key={innerIndex} className={`pb-6 max-lg:pb-3`} >
                                 <a  className={`text-lg max-2xl:text-sm inline-block duration-300 ease-in-out hover:text-dark-pink ${outterIndex === 3?"uppercase":"" }`} href={item.href}>{item.link}</a>
                             </li>
                         ))}
@@ -52,12 +52,12 @@ export default function Footer(){
                
               </li>
             </ul>
-            <div className='flex border-b border-dark-pink pb-8 mb-8 max-2xl:pb-6 max-2xl:mb-6'>
+            <div className='flex border-b border-dark-pink pb-8 mb-8 max-2xl:pb-6 max-2xl:mb-6 max-lg:flex-col '>
               <div className='flex-1'>
                 <p className='text-sm'> {Footerblk.title}</p>
               </div>
-              <div className='flex-initial w-80 '>
-                <ul className='flex justify-end'>
+              <div className='flex-initial w-80 max-lg:pt-5 max-sm:w-full'>
+                <ul className='flex justify-end max-lg:justify-start max-sm:flex-wrap'>
                   {Footerblk?.logos?.map((item , index) =>(
                      <li key={index} className=' ms-4 flex-initial w-[48px] h-[48px] flex items-center justify-center border border-dark-pink duration-300 ease-in-out hover:bg-dark-pink rounded-xl'><a className='block w-full h-full flex items-center justify-center' href={item.href} ><img className='object-contain w-auto h-auto' src={item.logo} alt="" /></a></li>
                   ))}

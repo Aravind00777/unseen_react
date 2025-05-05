@@ -13,7 +13,7 @@ export default function Videosec (){
     }
     return <section className="py-20 max-xl:py-14 bg-lightgrey">
         <div className="container">
-                <h2 className='font-bold text-45px max-3xl:text-[40px] max-2xl:text-4xl max-xl:text-3xl'>{videoSec.videotitle}</h2>
+                <h2 className='font-bold text-45px max-3xl:text-[40px] max-2xl:text-4xl max-xl:text-3xl max-lg:text-2xl'>{videoSec.videotitle}</h2>
                 <div className='relative z-[2] mt-10'>
                     <video className='w-full h-full' src={videoSec.videolink}></video>
                     <LazyLoadImage 

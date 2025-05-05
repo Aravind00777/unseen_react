@@ -14,7 +14,7 @@ export default function Header(props){
       <div className="fixed top-0 bg-black py-8 w-full left-0 z-[99]">
        <div className="container ">
            <nav className="flex items-center justify-between">
-        <a href="#" className="w-auto"><img className="object-contain w-full " src={logo} alt="" /></a>
+        <a href="#" className="w-auto max-lg:w-40"><img className="object-contain w-full " src={logo} alt="" /></a>
             
             <ul className="flex items-center justify-center max-xl:hidden max-xl:flex-col">
                 {navItems.map((item ) => (

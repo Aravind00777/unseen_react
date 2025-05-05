@@ -56,12 +56,12 @@ export default function Banner() {
                 <LazyLoadImage 
                     src={bannerBg} 
                     alt="Sample Image" 
-                    className="absolute right-[8%] w-auto top-[0px] z-[-1] max-2xl:right-0 max-2xl:w-2/3 max-xl:w-[90%]"/>
+                    className="absolute right-[8%] w-auto top-[0px] z-[-1] max-2xl:right-0 max-2xl:w-2/3 max-xl:w-[90%] max-sm:w-full max-sm:top-[50px]" />
                 </div>
                 </>
-                <ul className='pt-ptA1 max-2xl:pt-20 text-white flex items-center max-xl:flex-wrap max-xl:gap-4 justify-center'>
+                <ul className='pt-ptA1 max-2xl:pt-20 max-lg:pt-14 text-white flex items-center max-xl:flex-wrap max-xl:gap-4 justify-center'>
                 {cardblock?.cards?.map((item, index) => (
-                       <li key={index} className='p-cardpadding max-2xl:py-10 border-2 border-dark-pink mx-3 rounded-2xl max-xl:basis-[45%] max-xl:even:mr-0' >
+                       <li key={index} className='p-cardpadding max-2xl:py-10 border-2 border-dark-pink mx-3 rounded-2xl max-xl:basis-[45%] max-xl:even:mr-0 max-lg:mx-0 max-lg:basis-[80%] max-sm:basis-[100%]' >
                        <LazyLoadImage
                        src={item.cardImage}
                        alt="image"

@@ -29,7 +29,7 @@ export default function Latestnews(){
         <div className="container ">
             <ul className='flex items-center pb-20 max-3xl:pb-16 max-xl:pb-10 max-lg:flex-wrap max-lg:gap-4 justify-center' >
                 {latestnews?.news?.map((item , index) => (
-                    <li key={index} className='flex-1 p-6 max-xl:p-3 bg-lightgrey rounded-[20px] mx-3 max-lg:mx-0  max-lg:basis-[45%] max-lg:max-w-[45%] '>
+                    <li key={index} className='flex-1 p-6 max-xl:p-3 bg-lightgrey rounded-[20px] mx-3 max-lg:mx-0  max-lg:basis-[45%] max-lg:max-w-[45%] max-md:basis-[70%] max-md:max-w-[70%] max-sm:basis-[100%] max-sm:max-w-[100%]'>
                     <LazyLoadImage 
                     src={item.image}
                     className="object-contain w-full "
@@ -40,7 +40,7 @@ export default function Latestnews(){
                 ))}
                 
             </ul>
-            <h3 className='text-45px max-3xl:text-[40px] max-2xl:text-4xl max-xl:text-3xl font-bold'>{latestnews.newstitle}</h3>
+            <h3 className='text-45px max-3xl:text-[40px] max-2xl:text-4xl max-xl:text-3xl max-lg:text-2xl font-bold'>{latestnews.newstitle}</h3>
         </div>
     </section>
 }                                                               
