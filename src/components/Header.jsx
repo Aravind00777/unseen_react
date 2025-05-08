@@ -15,7 +15,11 @@ export default function Header(props){
        <div className="container ">
            <nav className="flex items-center justify-between">
         <a href="#" className="w-auto max-lg:w-40"><img className="object-contain w-full " src={logo} alt="" /></a>
-            
+            <div className=" w-[30px] h-[23px] relative z-[9] hidden max-xl:inline-block">
+                <span className="block w-[3px] absolute left-0 right-0 bg-white h-[3px] w-full top-0"></span>
+                <span className="block w-[3px] absolute left-0 right-0 bg-white h-[3px] w-full top-[10px]" ></span>
+                <span className="block w-[3px] absolute left-0 right-0 bg-white h-[3px] w-full bottom-0"></span>
+            </div>
             <ul className="flex items-center justify-center max-xl:hidden max-xl:flex-col">
                 {navItems.map((item ) => (
                     <li className="px-4 max-3xl:px-2" key={item.id}>
