@@ -40,10 +40,10 @@ export default function Banner() {
                 <>
                 <div className="max-w-3xl ">
                     <h1 className='text-white text-6xl max-3xl:text-[55px] max-2xl:text-5xl max-xl:text-4xl font-bold leading-[1.4]'>
-                        {bannerItems.name || 'Loading...'}
+                        {bannerItems.name}
                     </h1>
                     <p className='text-white text-xl max-xl:text-lg pt-10 font-normal'>
-                        {bannerItems.description || ''}
+                        {bannerItems.description}
                     </p>
 
                     {bannerItems.clicks?.map((item, index) => (
