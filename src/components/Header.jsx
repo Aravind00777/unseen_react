@@ -1,40 +1,9 @@
+
 import logo from  "../assets/image/logo.png";
-import React, { useEffect, useState } from 'react';
+import useData from "../hooks/useData";
 
-export default function Header(props){
-    const [navItems, setNavItems] = useState([]);
-    const [isOpen , setIsOpen] = useState(false);
-    const [isMobile , setIsMobile] = useState(false);
-
-
-    const Handleclick = () =>{
-        setIsOpen(!isOpen);
-    }
-
-
-    useEffect(() => {
-        fetch('http://localhost:3001/navItems')
-          .then((response) => response.json())
-          .then((data) => setNavItems(data))
-          .catch((error) => console.error('Error fetching navitems:', error));
-
-         const checkScreenSize = () => {
-      setIsMobile(window.innerWidth <= 991);
-    };
-    
-    // Check on initial render
-    checkScreenSize();
-    
-    // Add event listener for window resize
-    window.addEventListener('resize', checkScreenSize);
-    
-    // Clean up event listener
-    return () => {
-      window.removeEventListener('resize', checkScreenSize);
-    };
-        
-        
-      }, []);
+export default function Header(){
+    const {isOpen,navItems,handleclick} = useData();
     return  (
        
       <div className="fixed top-0 bg-black py-8 w-full left-0 z-[999]">
@@ -50,7 +19,7 @@ export default function Header(props){
                     ))}
                
                 </ul>
-          <button id="burgger-menu" onClick={Handleclick} className=" w-[30px] h-[23px] relative z-[99] hidden max-xl:inline-block">
+          <button id="burgger-menu" onClick={handleclick} className=" w-[30px] h-[23px] relative z-[99] hidden max-xl:inline-block">
                 <span className={`block w-[3px] absolute left-0 right-0 bg-white h-[3px] w-full top-0 duration-300 ease-in-out ${isOpen ? " max-xl:right-[20px] max-xl:rotate-45 max-xl:translate-y-2":"" }`} ></span>
                 <span className={`block w-[3px] absolute left-0 right-0 bg-white h-[3px] w-full top-[10px] duration-300 ease-in-out ${isOpen ? "opacity-0":"opacity-100"}`} ></span>
                 <span className={`block w-[3px] absolute left-0 right-0 bg-white h-[3px] w-full bottom-0 duration-300 ease-in-out ${isOpen ? "-rotate-45 -translate-y-2":""}`}></span>

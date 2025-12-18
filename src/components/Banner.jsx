@@ -7,8 +7,6 @@ import img3 from "../assets/image/videoimg3.png";
 import sign from "../assets/image/sign.png";
 
 
-
-
 export default function Banner() {
     const [bannerItems, setBannerItems] = useState({});
     
