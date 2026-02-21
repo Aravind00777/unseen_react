@@ -10,11 +10,13 @@ import Logosec from './components/Logosec';
 import Footer from './components/Footer';
 import DataPorvider from './providers/DataPorvider';
 import BannerProvider from './providers/BannerProvider';
+import CardProvider from './providers/CardProvider';
 function App() {
 
 
   return (
     <>
+    <CardProvider>
   <DataPorvider>
       <Header/>
     </DataPorvider>
@@ -29,7 +31,7 @@ function App() {
       <Readmore/>
       <Logosec/>
       <Footer/>
-     
+     </CardProvider>
     </>
     
      

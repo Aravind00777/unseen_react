@@ -73,7 +73,23 @@
       "title":"get in touch with us",
       "btmcnt1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum morbi blandit cursus risus at. Enim neque volutpat ac tincidunt vitae. Scelerisque eu ultrices vitae auctor eu augue ut. In est ante in nibh mauris.",
       "btmcnt2":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum morbi"
-    }
+    },
+    "cards":[{
+            "cardimage":"../assets/image/actionimg1.png",
+            "cardtitle":"6 week part time acting courses in London",
+            "cardcnt":"The Unseen provides affordable high-end, weekend actor training courses at The Unseen drama school in London. Professional high end environments under the supervision of real working industry professionals"
+        },
+        {
+            "cardimage":"../assets/image/actionimg2.png",
+            "cardtitle":"Actor Training -our current class structure",
+            "cardcnt":"The Unseen provides affordable high-end, weekend actor training courses at The Unseen drama school in London. Professional high end environments under the supervision of real working industry professionals"
+        },
+        {
+            "cardimage":"../assets/image/actionimg2.png",
+            "cardtitle":"The Unseen Showcase is streaming!",
+            "cardcnt":"The Unseen provides affordable high-end, weekend actor training courses at The Unseen drama school in London. Professional high end environments under the supervision of real working industry professionals"
+        }     
+        ]
 
 
   }
