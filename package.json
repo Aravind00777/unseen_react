@@ -9,7 +9,7 @@
     "build": "npx vite build",
     "lint": "eslint .",
     "predeploy": "npm run build",
-  "deploy": "main -d dist",
+  "deploy": "gh-pages -d dist",
     "preview": "npx vite preview",
     "server": "json-server db.json --port 3001"
   },
