@@ -1,0 +1,81 @@
+
+  {
+    "navItems": [
+      { "id": 1, "label": "home", "href": "#" },
+      { "id": 2, "label": "about us", "href": "#" },
+      { "id": 3, "label": "methods", "href": "#" },
+      { "id": 4, "label": "review", "href": "#" },
+      { "id": 5, "label": "price", "href": "#" },
+      { "id": 6, "label": "gallery", "href": "#" },
+      { "id": 7, "label": "agency", "href": "#" },
+      { "id": 8, "label": "online", "href": "#" },
+      { "id": 9, "label": "contact us", "href": "#" }
+    ],
+    "school": {
+      
+      "name": "The UK’s Leading Weekend Drama School",
+      "description": "Highly respected teachers from Top UK Drama Schools work alongside specialised Unseen tutors, providing cutting edge courses incorporating techniques such as Meisner, Stanislavski, Laban and Chekhov. We hold monthly showcases as well as live events in venues including Soho House, and Electric Cinema and accept beginner to advanced level.",
+      "clicks": [{"contact":"i love you pachu", "id":1, "href":"#"}]
+      
+    
+    },
+
+    "learnmore":{
+        "learnmore_block":[{
+          "subtitle":"Lorem ipsum dolor sit amet",
+          "title":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+          "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum morbi blandit cursus risus at. Enim neque volutpat ac tincidunt vitae.",
+          "btn":"Learn more"
+        }]
+      
+    },
+    "knowmore":{
+      "knowmore_title":"Lorem ipsum dolor sit amet consectetur",
+      "knowmore_cnt":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi tempus imperdiet nulla malesuada pellentesque. Varius sit amet mattis vulputate enim nulla aliquet porttitor.",
+      "knowmore_btn":"know more"
+    },
+    "footerdata":{
+      "footertitles":[
+        {"title":"methods",
+        "links":[
+        {"link":"Lorem ipsum dolor ","href": "#"},
+        {"link":"Lorem ipsum dolor ","href": "#"},
+        {"link":"Lorem ipsum dolor ","href": "#"},
+        {"link":"Lorem ipsum dolor ","href": "#"}
+      ]
+      },
+      {"title":"about us",
+         "links":[
+        {"link":"Lorem ipsum dolor ","href": "#"},
+        {"link":"Lorem ipsum dolor ","href": "#"},
+        {"link":"Lorem ipsum dolor ","href": "#"},
+        {"link":"Lorem ipsum dolor ","href": "#"}
+      ]
+    },
+      {"title":"contact us",
+    "links":[
+        {"link":"Lorem ipsum dolor ","href": "#"},
+        {"link":"Lorem ipsum dolor ","href": "#"},
+        {"link":"Lorem ipsum dolor ","href": "#"},
+        {"link":"Lorem ipsum dolor ","href": "#"}
+      ]
+    },
+      {  "title":"gallery",
+      "links":[
+        {"link":"reviews ","href": "#"},
+        {"link":"price","href": "#"},
+        {"link":"online","href": "#"},
+        {"link":"agency ","href": "#"}
+      ]
+    } 
+    ],
+    "btngo":"go",
+      "title":"get in touch with us",
+      "btmcnt1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum morbi blandit cursus risus at. Enim neque volutpat ac tincidunt vitae. Scelerisque eu ultrices vitae auctor eu augue ut. In est ante in nibh mauris.",
+      "btmcnt2":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum morbi"
+    }
+
+
+  }
+
+  
