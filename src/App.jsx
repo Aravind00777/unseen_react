@@ -9,6 +9,7 @@ import Readmore from './components/Readmore';
 import Logosec from './components/Logosec';
 import Footer from './components/Footer';
 import DataPorvider from './providers/DataPorvider';
+import BannerProvider from './providers/BannerProvider';
 function App() {
 
 
@@ -16,7 +17,10 @@ function App() {
     <>
   <DataPorvider>
       <Header/>
-      <Banner/>
+    </DataPorvider>
+        <BannerProvider>
+            <Banner/>
+          </BannerProvider>
       <Learnmore/>
       <Knowmore/>
       <Action_card/>
@@ -25,7 +29,7 @@ function App() {
       <Readmore/>
       <Logosec/>
       <Footer/>
-      </DataPorvider>
+     
     </>
     
      
