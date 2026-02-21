@@ -5,20 +5,11 @@ import img1 from "../assets/image/videoimg1.png";
 import img2 from "../assets/image/videoimg2.png";
 import img3 from "../assets/image/videoimg3.png";
 import sign from "../assets/image/sign.png";
-
-
+import useBanner from '../hooks/useBanner';
 
 
 export default function Banner() {
-    const [bannerItems, setBannerItems] = useState({});
-    
-
-    useEffect(() => {
-        fetch('http://localhost:3001/school')
-            .then((response) => response.json())
-            .then((data) => setBannerItems(data))
-            .catch((error) => console.error('Error fetching banner items:', error));
-    }, []);
+    const {setBannerItems,bannerItems} = useBanner();
     const cardblock = {
         cards: [
           { cardImage:img1,
