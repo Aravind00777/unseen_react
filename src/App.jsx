@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import DataPorvider from './providers/DataPorvider';
 import BannerProvider from './providers/BannerProvider';
 import CardProvider from './providers/CardProvider';
+import FooterProvider from './providers/FooterProvider';
 function App() {
 
 
@@ -30,7 +31,9 @@ function App() {
       <Latestnews/>
       <Readmore/>
       <Logosec/>
+      <FooterProvider>
       <Footer/>
+      </FooterProvider>
      </CardProvider>
     </>
     

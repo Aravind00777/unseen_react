@@ -1,13 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import LazyLoadImage from './Lazyload';
 import logo from  "../assets/image/logo.png";
-import img1 from  "../assets/image/fb.png";
-import img2 from  "../assets/image/tw.png";
-import img3 from  "../assets/image/linkedin.png";
-import img4 from  "../assets/image/youtube.png";
+import useFooter from '../hooks/useFooter';
 
 export default function Footer(){
-   
+   const {footerdata} = useFooter();
     return <footer className='pt-20 pb-10 max-2xl:pt-14  bg-black text-white border-t-[7px] border-dark-pink'>
         <div className="container ">
             <a href=""><img className='object-contain w-auto h-auto' src={logo} alt="" /></a>
@@ -36,18 +31,23 @@ export default function Footer(){
             </ul>
             <div className='flex border-b border-dark-pink pb-8 mb-8 max-2xl:pb-6 max-2xl:mb-6 max-lg:flex-col '>
               <div className='flex-1'>
-                <p className='text-sm'> {Footerblk.title}</p>
+                <p className='text-sm'> {footerdata?.sociallinks?.map(link => link.title)}</p>
               </div>
               <div className='flex-initial w-80 max-lg:pt-5 max-sm:w-full'>
-                <ul className='flex justify-end max-lg:justify-start max-sm:flex-wrap'>
-                  {Footerblk?.logos?.map((item , index) =>(
+                {footerdata?.sociallinks?.map((social , i ) =>(
+                   <ul key={i} className='flex justify-end max-lg:justify-start max-sm:flex-wrap'> 
+                    {social?.logos?.map((item , index ) =>(
                      <li key={index} className=' ms-4 flex-initial w-[48px] h-[48px] flex items-center justify-center border border-dark-pink duration-300 ease-in-out hover:bg-dark-pink rounded-xl'><a className='block w-full h-full flex items-center justify-center' href={item.href} ><img className='object-contain w-auto h-auto' src={item.logo} alt="" /></a></li>
                   ))}
+                   </ul>
+                ))}
+               
                  
-                </ul>
+                 
+               
               </div>
             </div>
-            <p className='text-sm'>{Footerblk.bottomcnt}</p>
+            <p className='text-sm'>{footerdata.bottomcnt}</p>
         </div>
     </footer>
 }
