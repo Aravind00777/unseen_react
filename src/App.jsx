@@ -12,6 +12,7 @@ import DataPorvider from './providers/DataPorvider';
 import BannerProvider from './providers/BannerProvider';
 import CardProvider from './providers/CardProvider';
 import FooterProvider from './providers/FooterProvider';
+import KnowmoreProvider from './providers/KnowmoreProvider';
 function App() {
 
 
@@ -25,7 +26,11 @@ function App() {
             <Banner/>
           </BannerProvider>
       <Learnmore/>
-      <Knowmore/>
+ 
+      <KnowmoreProvider>
+          <Knowmore />
+      </KnowmoreProvider>
+    
       <Action_card/>
       <Videosec/>
       <Latestnews/>

@@ -1,3 +1,3 @@
 import { createContext } from "react";
-  const CardContext = createContext();
-  export default CardContext;
+  const CardContext = createContext(null)
+export default CardContext
