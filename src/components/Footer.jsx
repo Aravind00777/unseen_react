@@ -7,25 +7,7 @@ import img3 from  "../assets/image/linkedin.png";
 import img4 from  "../assets/image/youtube.png";
 
 export default function Footer(){
-    const [footerdata ,setFooterdata] = useState({});
-    const Footerblk = {
-      title:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum morbi blandit cursus risus at. Enim neque volutpat ac tincidunt vitae. Scelerisque eu ultrices vitae auctor eu augue ut. In est ante in nibh mauris.",
-      logos :[
-        {logo:img1 ,href:"#"},
-        {logo:img2 ,href:"#"},
-        {logo:img3 ,href:"#"},
-        {logo:img4 ,href:"#"}
-      ],
-      bottomcnt:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum morbi"
-
-    }
-    useEffect(()=> {
-        fetch('http://localhost:3001/footerdata')
-        .then((response ) => response.json())
-        .then((data) => setFooterdata(data))
-        .catch((error) => console.error('Error fetching footer data', error));
-
-    },[]);
+   
     return <footer className='pt-20 pb-10 max-2xl:pt-14  bg-black text-white border-t-[7px] border-dark-pink'>
         <div className="container ">
             <a href=""><img className='object-contain w-auto h-auto' src={logo} alt="" /></a>
