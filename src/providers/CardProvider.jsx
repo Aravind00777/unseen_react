@@ -1,7 +1,7 @@
 import { useState,useEffect } from "react";
 import CardContext from "../contexts/CardContext";
 export default function CardProvider({children}){
-    const [carditem, setCarditem  ] = useState([]);
+    const [carditem, setCarditem ] = useState([]);
     
         useEffect(() => {
             fetch('http://localhost:3001/cards')
